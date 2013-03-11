@@ -1,0 +1,322 @@
+/*
+Theme name: 19 Design
+Theme uri: http://19design.com.br/
+Author: Rafael Dourado
+Author uri: http://rafaeldourado.com.br/
+Version: 1.0
+*/
+
+@font-face {font-family: 'UniversLTPro-55Roman';src: url('webfonts/262BC4_0_0.eot');src: url('webfonts/262BC4_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/262BC4_0_0.woff') format('woff'),url('webfonts/262BC4_0_0.ttf') format('truetype');}
+
+@font-face {font-family: 'UniversLTPro-Condensed';src: url('webfonts/262BC4_1_0.eot');src: url('webfonts/262BC4_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/262BC4_1_0.woff') format('woff'),url('webfonts/262BC4_1_0.ttf') format('truetype');}
+
+@font-face {font-family: 'UniversLTPro-BoldCond';src: url('webfonts/262BC4_2_0.eot');src: url('webfonts/262BC4_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/262BC4_2_0.woff') format('woff'),url('webfonts/262BC4_2_0.ttf') format('truetype');}
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* Default */
+
+html, body { height: 100% }
+body {
+	color: #424243;
+	font-size: 14px;
+	min-width: 600px;
+}
+ul, ol, li { list-style: none }
+hr, .hide { display: none }
+img, .show { display: block }
+a {
+	color: #424243;
+	text-decoration: none;
+}
+a:hover,
+a:focus,
+a:active,
+.current-menu-item>a,
+.current_page_item>a,
+.current-page-ancestor>a,
+.contato .menu-item-contact { color: #fa8c00 !important }
+
+.cf:before,
+.cf:after {
+	content: " ";
+	display: table;
+}
+.cf:after { clear: both }
+.cf { *zoom: 1 }
+
+/*  */
+
+#wrap {
+	min-height: 100%;
+	position: relative;
+}
+#head {
+	height: 110px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+#body {
+	border-left: 40px solid #fff;
+	border-right: 40px solid #fff;
+	padding: 110px 0 80px;
+	overflow: hidden;
+}
+#foot {
+	bottom: 0;
+	height: 80px;
+	left: 0;
+	position: absolute;
+	width: 100%;
+}
+
+/* Head */
+
+#logo {
+	left: 40px;
+	position: absolute;
+	top: 36px;
+}
+#nav {
+	left: 270px;
+	position: absolute;
+	top: 36px;
+	width: 280px;
+}
+.menu-item {
+	float: left;
+	font-family: 'UniversLTPro-Condensed', sans-serif;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+}
+.menu-item-1,
+.menu-item-3 { width: 120px }
+.menu-item:hover>a { color: #fa8c00 }
+.sub-menu {
+	background: #fff;
+	display: none;
+	margin-left: -5px;
+	overflow: hidden;
+	padding: 10px 5px 0;
+}
+.sub-menu .menu-item {
+	float: none;
+	font-size: 12px;
+}
+.sub-menu .menu-item a {
+	display: block;
+	width: 100%;
+}
+.menu-item:hover .sub-menu { display: block }
+#social-menu {
+	position: absolute;
+	right: 40px;
+	top: 36px;
+}
+.social-item {
+	float: right;
+	margin-left: 20px;
+}
+
+/* Body */
+
+
+
+/* Foot */
+
+#hcard-19-design {
+	bottom: 36px;
+	display: block;
+	font: normal 13px 'UniversLTPro-Condensed', sans-serif;
+	left: 40px;
+	margin-right: 100px;
+	position: absolute;
+}
+#hcard-19-design strong,
+#menu-item-contact { font-family: 'UniversLTPro-BoldCond', sans-serif }
+#menu-item-contact {
+	bottom: 36px;
+	display: block;
+	position: absolute;
+	right: 40px;
+	text-transform: uppercase;
+}
+
+/* Archive */
+
+.jobs-list { overflow: hidden }
+.job-item {
+	background: #ff8e00;
+	float: left;
+	margin: 10px;
+	position: relative;
+}
+.job-name {
+	color: #424243;
+	display: none;
+	font-family: 'UniversLTPro-Condensed', sans-serif;
+	font-size: 19px;
+	left: 0;
+	padding: 14px 12px;
+	position: absolute;
+	text-transform: uppercase;
+	top: 0;
+}
+.job-terms {
+	bottom: 0;
+	color: #424243;
+	display: none;
+	font-family: 'UniversLTPro-55Roman', sans-serif;
+	font-size: 13px;
+	left: 0;
+	line-height: 23px;
+	padding: 8px 12px;
+	position: absolute;
+	text-transform: lowercase;
+}
+
+/* Pages */
+
+.hentry,
+.screenshots {
+	font-family: 'UniversLTPro-55Roman', sans-serif;
+	font-size: 13px;
+	line-height: 20px;
+	margin-left: 230px;
+}
+.hentry h1,
+.hentry h2,
+.hentry h3,
+.hentry h4,
+.single .hentry a { color: #fa8c00 }
+.hentry p,
+.hentry ul,
+.hentry ol { margin-bottom: 20px }
+.hentry li:before { content: '– ' }
+
+.sidebar,
+#hcard {
+	float: left;
+	font-family: 'UniversLTPro-55Roman', sans-serif;
+	font-size: 13px;
+	line-height: 20px;
+	margin-left: 0;
+	width: 190px;
+}
+.pages-menu li { margin-bottom: 10px }
+
+.column h2,
+.column h3,
+.column ul { padding-right: 20px }
+.last.column h2,
+.last.column h3,
+.last.column ul { padding-right: 0 }
+
+/* Single */
+
+.single .shot-list { display: table }
+.single .shot-item {
+	display: table-cell;
+	min-width: 320px;
+	padding: 0 0 0 40px;
+	vertical-align: top;
+}
+
+.single .shot-item {
+	min-width: 0;
+	width: auto;
+}
+.hentry .shot-item:before { content: '' }
+
+/* Prêmios */
+
+.page-premios .hentry,
+.page-contato .hentry { margin-left: 0 }
+
+/* Contato */
+
+#hcard {
+	float: none;
+	margin-left: 550px;
+	width: 220px;
+}
+.page-contato .hentry { float: left }
+
+label,
+.wpcf7-submit { color: #fa8c00 }
+.text,
+.area {
+	border: 0 none;
+	font-size: 13px;
+	line-height: 30px;
+	margin: 0;
+	padding: 0;
+	width: 487px;
+
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+}
+.text { border-bottom: 1px solid #424243 }
+.area {
+	background: url(img/line.gif);
+	height: 120px;
+}
+
+.wpcf7-submit {
+	background: #fff;
+	border: 0 none;
+	cursor: pointer;
+	font: 15px 'UniversLTPro-BoldCond', sans-serif;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+.wpcf7-not-valid-tip { display: none !important }
+
+/* Scrollbar */
+
+#content {
+	clear: both;
+	width: 100%;
+}
+#content .viewport {
+	position: relative;
+	width: 100%;
+}
+#content .overview { position: relative }
+#content .thumb .end,
+#content .thumb { background-color: #fa8c00 }
+#content .scrollbar {
+	margin: 0 auto;
+	position: relative;
+	top: 0;
+	width: 1px;
+	z-index: 100;
+}
+#content .track {
+	background-color: #cbcbcb;
+	height: 1px;
+	padding: 0 1px;
+	position: relative;
+	width: 12px;
+}
+#content .thumb {
+	cursor: pointer;
+	height: 13px;
+	overflow: hidden;
+	position: absolute;
+	top: -6px;
+	width: 13px;
+}
+#content .disable { display: none }
+.noSelect {
+	user-select: none;
+
+	-webkit-user-select: none;
+	 -khtml-user-select: none;
+	   -moz-user-select: none;
+		 -o-user-select: none;
+}

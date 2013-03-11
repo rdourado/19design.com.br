@@ -1,0 +1,580 @@
+
+Theme name: 19 Design
+Theme uri: http://19design.com.br/
+Author: Rafael Dourado
+Author uri: http://rafaeldourado.com.br/
+Version: 1.0
+*/
+
+@font-face { font-family: "Akko Pro Light"; src: url('webfonts/347717286-AkkoPro-Light.eot'); src: url('webfonts/347717286-AkkoPro-Light.eot?#iefix') format('embedded-opentype'), url('webfonts/347717286-AkkoPro-Light.svg#Akko Pro Light') format('svg'), url('webfonts/347717286-AkkoPro-Light.woff') format('woff'), url('webfonts/347717286-AkkoPro-Light.ttf') format('truetype'); font-weight: normal; font-style: normal; }
+@font-face { font-family: "Akko Pro Medium"; src: url('webfonts/494781495-AkkoPro-Medium.eot'); src: url('webfonts/494781495-AkkoPro-Medium.eot?#iefix') format('embedded-opentype'), url('webfonts/494781495-AkkoPro-Medium.svg#Akko Pro Medium') format('svg'), url('webfonts/494781495-AkkoPro-Medium.woff') format('woff'), url('webfonts/494781495-AkkoPro-Medium.ttf') format('truetype'); font-weight: normal; font-style: normal; }
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* Default */
+
+html, body { height: 100% }
+body {
+	color: #6e6e6e;
+	font-size: 14px;
+	min-width: 600px;
+}
+ul, ol, li { list-style: none }
+hr, .hide { display: none }
+img, .show { display: block }
+a {
+	color: #6e6e6e;
+	display: block;
+	text-decoration: none;
+}
+a:hover,
+a:focus,
+a:active,
+.current-menu-item>a,
+.current_page_item>a,
+.current-page-ancestor>a,
+.contato .menu-item-contact { color: #fa8c00 !important }
+
+.cf:before,
+.cf:after {
+	content: " ";
+	display: table;
+}
+.cf:after { clear: both }
+.cf { *zoom: 1 }
+
+/*  */
+
+#wrap {
+	min-height: 100%;
+	position: relative;
+}
+#head {
+	height: 104px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+#body {
+	border-left: 40px solid #fff;
+	border-right: 40px solid #fff;
+	padding: 104px 0 68px;
+	overflow: hidden;
+}
+#foot {
+	bottom: 0;
+	height: 68px;
+	left: 0;
+	position: absolute;
+	width: 100%;
+}
+
+/* Head */
+
+#logo {
+	left: 40px;
+	position: absolute;
+	top: 35px;
+}
+#nav {
+	left: 270px;
+	position: absolute;
+	top: 36px;
+	width: 420px;
+	z-index: 200;
+}
+.menu-item {
+	float: left;
+	font-family: 'Akko Pro Medium', sans-serif;
+	font-size: 13px;
+	margin-bottom: 5px;
+	text-transform: lowercase;
+}
+.menu-item-1,
+.menu-item-4 { width: 126px }
+.menu-item-2,
+.menu-item-5 { width: 104px }
+.menu-item:hover>a { color: #fa8c00 }
+.sub-menu {
+	background: #fff;
+	display: none;
+	margin-left: -5px;
+	overflow: hidden;
+	padding: 10px 5px 0;
+}
+.sub-menu .menu-item {
+	float: none;
+	font-family: 'Akko Pro Light', sans-serif;
+	font-size: 12px;
+}
+.sub-menu .menu-item a {
+	display: block;
+	width: 100%;
+}
+.menu-item:hover .sub-menu { display: block }
+#social-menu {
+	position: absolute;
+	right: 40px;
+	top: 36px;
+}
+.social-item {
+	float: right;
+	margin-left: 20px;
+}
+
+/* Body */
+
+
+
+/* Foot */
+
+#hcard-19-design {
+	bottom: 36px;
+	color: #6e6e6e;
+	display: block;
+	font: normal 11px 'Akko Pro Medium', sans-serif;
+	left: 40px;
+	margin-right: 100px;
+	position: absolute;
+}
+#hcard-19-design a { display: inline }
+#hcard-19-design strong,
+#menu-item-contact { font-family: 'Akko Pro Medium', sans-serif }
+#menu-item-contact {
+	bottom: 36px;
+	display: block;
+	position: absolute;
+	right: 40px;
+	text-transform: lowercase;
+}
+
+/* Archive */
+
+.jobs-list { overflow: hidden }
+.job-item {
+	background: #ff8e00;
+	float: left;
+	margin: 10px;
+	position: relative;
+}
+.job-name,
+.job-terms {
+	color: #fff;
+	display: block;
+	font-family: 'Akko Pro Light', sans-serif;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	z-index: 10;
+}
+.job-name {
+	font-size: 17px;
+	line-height: 21px;
+	padding: 14px 12px;
+	/*text-transform: uppercase;*/
+	top: 0;
+	/*visibility: hidden;*/
+}
+.job-terms {
+	bottom: 0;
+	font-size: 12px;
+	line-height: 17px;
+	padding: 8px 12px;
+	text-transform: lowercase;
+	/*visibility: hidden;*/
+}
+.job-item a:hover img,
+.job-item a:focus img {
+	/*visibility: hidden*/
+	opacity: 0
+}
+.job-item a:hover .job-name, .job-item a:hover .job-terms,
+.job-item a:hover .job-name, .job-item a:focus .job-terms {
+	/*visibility: visible*/
+	opacity: 1;
+}
+
+/* Pages */
+
+.hentry,
+.screenshots {
+	font-family: 'Akko Pro Light', sans-serif;
+	font-size: 12px;
+	line-height: 17px;
+	margin-left: 230px;
+}
+.hentry h1,
+.hentry h2,
+.hentry h3,
+.hentry h4 { font-family: 'Akko Pro Medium', sans-serif }
+.single .hentry a { color: #fa8c00 }
+.hentry p,
+.hentry ul,
+.hentry ol { margin-bottom: 20px }
+.hentry li {
+	list-style: disc;
+	margin-left: 14px;
+}
+/*.hentry li:before { content: '– ' }*/
+
+.sidebar,
+#hcard {
+	float: left;
+	font-family: 'Akko Pro Medium', sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	margin-left: 0;
+	width: 190px;
+}
+.pages-menu li { margin-bottom: 4px }
+
+.sidebar,.hentry,#hcard,.screenshots {
+	/*min-height: 440px;*/
+	height: 440px;
+	padding-top: 20px;
+}
+
+.column h2,
+.column h3,
+.column ul { padding-right: 20px }
+.last.column h2,
+.last.column h3,
+.last.column ul { padding-right: 0 }
+
+/* Single */
+
+.single .hentry {
+	font-family: 'Akko Pro Light', sans-serif;
+	font-size: 12px;
+	line-height: 17px;
+}
+.single .hentry h2 {
+	color: #6e6e6e;
+	font-family: 'Akko Pro Medium', sans-serif;
+	font-size: 12px;
+	line-height: 17px;
+	text-transform: lowercase;
+}
+
+.single .shot-list { display: table }
+.single .shot-item {
+	display: table-cell;
+	min-width: 320px;
+	padding: 0 0 0 40px;
+	vertical-align: top;
+}
+
+.single .shot-item {
+	min-width: 0;
+	width: auto;
+}
+.hentry .shot-item:before { content: '' }
+.tags {
+	color: #fa8c00;
+	font-size: 10px;
+	line-height: 14px;
+	text-transform: lowercase;
+}
+.tags a { display: inline }
+.tags a:hover,
+.tags a:focus { font-family: 'Akko Pro Medium', sans-serif }
+
+/* Prêmios */
+
+.page-premios .hentry,
+.page-contato .hentry { margin-left: 0 }
+
+/* Contato */
+
+#hcard {
+	float: none;
+	margin-left: 550px;
+	width: 220px;
+}
+.page-contato .hentry { float: left }
+
+label,
+.wpcf7-submit { color: #fa8c00 }
+.text,
+.area {
+	border: 0 none;
+	font-size: 13px;
+	line-height: 30px;
+	margin: 0;
+	padding: 0;
+	width: 487px;
+
+	-webkit-box-sizing: border-box;
+		 -moz-box-sizing: border-box;
+			box-sizing: border-box;
+}
+.text { border-bottom: 1px solid #6e6e6e }
+.area {
+	background: url(img/line.gif);
+	height: 120px;
+}
+
+.wpcf7-submit {
+	background: #fff;
+	border: 0 none;
+	cursor: pointer;
+	font: 15px 'Akko Pro Light', sans-serif;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+.wpcf7-not-valid-tip { display: none !important }
+
+/* Scrollbar */
+
+#content {
+	clear: both;
+	width: 100%;
+}
+#content .viewport {
+	position: relative;
+	width: 100%;
+}
+#content .overview { position: relative }
+#content .thumb .end,
+#content .thumb { background-color: #fa8c00 }
+#content .scrollbar {
+	margin: 0 auto;
+	position: relative;
+	top: 0;
+	width: 1px;
+	z-index: 100;
+}
+#content .track {
+	background-color: #cbcbcb;
+	height: 1px;
+	padding: 0 1px;
+	position: relative;
+	width: 20px;
+}
+#content .thumb {
+	border-radius: 5px;
+	cursor: pointer;
+	height: 20px;
+	overflow: hidden;
+	position: absolute;
+	top: -10px;
+	width: 20px;
+}
+#content .thumb:before {
+	border-top: 2px solid #fff;
+	border-right: 2px solid #fff;
+	content: '';
+	display: block;
+	height: 40%;
+	left: 50%;
+	margin: -4px 0 0 -6px;
+	position: absolute;
+	top: 50%;
+	width: 40%;
+
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+
+	-webkit-transform: rotate(45deg);
+	   -moz-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	     -o-transform: rotate(45deg);
+	        transform: rotate(45deg);
+}
+#content .disable .thumb { display: none }
+.noSelect {
+	user-select: none;
+
+	-webkit-user-select: none;
+	 -khtml-user-select: none;
+		 -moz-user-select: none;
+		 -o-user-select: none;
+}
+
+/* Preloader */
+
+#preloader {
+	background: #fff;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+}
+
+/* Slides */
+
+.slides-list,
+.slick-list {
+	bottom: 68px;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 104px;
+}
+.slide-item {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.slide-item a {
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+.slide-item img {
+	display: none !important;
+}
+
+.slick-arrow {
+	display: none;
+	/*background: #fa8c00;
+	border: 0 none;
+	border-radius: 5px;
+	display: block;
+	font: 0/0 sans-serif;
+	height: 20px;
+	margin-top: -10px;
+	outline: none;
+	position: absolute;
+	top: 50%;
+	width: 20px;*/
+}
+/*.slick-arrow:before {
+	border-top: 2px solid #fff;
+	border-right: 2px solid #fff;
+	content: '';
+	display: block;
+	height: 40%;
+	left: 50%;
+	margin: -4px 0 0 -6px;
+	position: absolute;
+	top: 50%;
+	width: 40%;
+
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+
+	-webkit-transform: rotate(45deg);
+	   -moz-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	     -o-transform: rotate(45deg);
+	        transform: rotate(45deg);
+}
+.slick-next { right: 40px }
+.slick-prev { left: 40px }
+.slick-prev:before {
+	margin-left: -2px;
+	-webkit-transform: rotate(-135deg);
+	   -moz-transform: rotate(-135deg);
+	    -ms-transform: rotate(-135deg);
+	     -o-transform: rotate(-135deg);
+	        transform: rotate(-135deg);
+}*/
+
+.slick-dots {
+	bottom: 10px;
+	font: 0/0 sans-serif;
+	left: 0;
+	position: absolute;
+	right: 0;
+	text-align: center;
+}
+.slick-dots li { display: inline }
+.slick-dots button {
+	background: #fff;
+	border: 1px solid #666;
+	border-radius: 50%;
+	display: inline-block;
+	font: inherit;
+	height: 20px;
+	margin: 0 4px;
+	outline: none;
+	padding: 3px;
+	vertical-align: top;
+	width: 20px;
+}
+.slick-active button:before {
+	background: #666;
+	border-radius: 50%;
+	content: "";
+	display: block;
+	height: 12px;
+}
+
+/* Slick slider */
+
+.slick-list {
+	bottom: 0;
+	display: block;
+	left: 0;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+
+	/*height: 100%;*/
+}
+.slick-list:focus { outline: none }
+.slick-list.dragging {
+	cursor: pointer;
+	cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	-o-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+	display: block;
+	left: 0;
+	position: relative;
+	top: 0;
+
+	height: 100%;
+}
+.slick-track:before,
+.slick-track:after {
+	display: table;
+	content: '';
+}
+.slick-track:after { clear: both }
+.slick-loading .slick-track { visibility: hidden }
+
+.slick-slide {
+	display: none;
+	float: left;
+	height: 100%;
+	min-height: 1px;
+}
+[dir='rtl'] .slick-slide { float: right }
+.slick-slide img { display: block }
+.slick-slide.slick-loading img { display: none }
+.slick-slide.dragging img { pointer-events: none }
+.slick-initialized .slick-slide { display: block }
+.slick-loading .slick-slide { visibility: hidden }
+.slick-vertical .slick-slide {
+	border: 1px solid transparent;
+	display: block;
+	height: auto;
+}
+.slick-arrow.slick-hidden { display: none }
+

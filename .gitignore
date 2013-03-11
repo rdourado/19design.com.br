@@ -1,0 +1,9 @@
+Web
+dynamic/wp-admin
+dynamic/wp-includes
+dynamic/*.php
+dynamic/license.txt
+dynamic/readme.html
+dynamic/index.php
+dynamic/wp-content/index.php
+dynamic/wp-content/languages
